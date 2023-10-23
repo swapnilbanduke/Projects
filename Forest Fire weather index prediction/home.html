@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Add these CSS styles to enhance the visual appearance */
+        .login {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .form-group label {
+            color: #4CAF50;
+        }
+        .form-control {
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 100%;
+        }
+        .btn-primary {
+            background-color: #4CAF50;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <h1>FWI Prediction</h1>
+        <form action="{{ url_for('predict_datapoint')}}" method="post">
+            <div class="form-group">
+                <label for="Temperature">Temperature</label>
+                <input type="text" class="form-control" name="Temperature" id="Temperature" placeholder="Enter Temperature" required="required">
+            </div>
+            <div class="form-group">
+                <label for="RH">RH</label>
+                <input type="text" class="form-control" name="RH" id="RH" placeholder="Enter RH" required="required">
+            </div>
+            <div class="form-group">
+                <label for="Ws">Ws</label>
+                <input type="text" class="form-control" name="Ws" id="Ws" placeholder="Enter Ws" required="required">
+            </div>
+            <div class="form-group">
+                <label for="Rain">Rain</label>
+                <input type="text" class="form-control" name="Rain" id="Rain" placeholder="Enter Rain" required="required">
+            </div>
+            <div class="form-group">
+                <label for="FFMC">FFMC</label>
+                <input type="text" class="form-control" name="FFMC" id="FFMC" placeholder="Enter FFMC" required="required">
+            </div>
+            <div class="form-group">
+                <label for="DMC">DMC</label>
+                <input type="text" class="form-control" name="DMC" id="DMC" placeholder="Enter DMC" required="required">
+            </div>
+            <div class="form-group">
+                <label for="ISI">ISI</label>
+                <input type="text" class="form-control" name="ISI" id="ISI" placeholder="Enter ISI" required="required">
+            </div>
+            <div class="form-group">
+                <label for="Classes">Classes</label>
+                <input type="text" class="form-control" name="Classes" id="Classes" placeholder="Enter Classes" required="required">
+            </div>
+            <div class="form-group">
+                <label for="Region">Region</label>
+                <input type="text" class="form-control" name="Region" id="Region" placeholder="Enter Region" required="required">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Predict</button>
+        </form>
+        <h2>THE FWI prediction is {{results}}</h2>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
