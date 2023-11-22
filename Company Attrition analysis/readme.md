@@ -27,10 +27,8 @@ In this project, we aim to predict employee churn at the Dunder Mifflin Paper Co
 ### Target Variable
 
 - **Classes**: Employees will be classified into four classes based on their likelihood to leave:
-  - Class A: Highly likely to leave.
-  - Class B: Moderately likely to leave.
-  - Class C: Slightly likely to leave.
-  - Class D: Not likely to leave.
+  - Class 1: Highly likely to leave.
+  - Class 0: Not likely to leave.
 
 ## Project Structure
 
@@ -50,16 +48,13 @@ Follow these steps to run the project:
 3. Install the required dependencies: `pip install -r requirements.txt`
 4. Run the main script: `python src/main.py`
 
-## Results
-
-Include information about the model's performance, key insights, and recommendations for reducing employee churn.
-
 ## Contributors
 
-- [Your Name]
-- [Other Contributor Names, if applicable]
+- [Swapnil Banduke]
+- [Amit Kumar]
+- [Meshram Shravasti]
+- [Abhigna Alagoni]
+- [Sampreethi Bokka]
+- [Anuj Gupta]
 
-## License
-
-This project is licensed under the [License Name] - see the [LICENSE.md](LICENSE.md) file for details.
 
