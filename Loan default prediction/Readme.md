@@ -11,9 +11,6 @@ It results in reducing the possibility of losses and manage financial risk. Basi
 
 This is a Academic project as part of curriculum of course.
 
-### Project Partner
-- Lipi Shah (University of Houston)
-- Anirudh Pallerla (University of Houston)
 
 ### Methods Used
 - Exploratory Data Analysis
