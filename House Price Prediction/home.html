@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Add these CSS styles to enhance the visual appearance */
+        .prediction-form {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .form-group label {
+            color: #4CAF50;
+        }
+        .form-control {
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 100%;
+        }
+        .btn-primary {
+            background-color: #4CAF50;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="prediction-form">
+        <h1>House Price Prediction</h1>
+        <form action="{{ url_for('predict_price')}}" method="post">
+            <div class="form-group">
+                <label for="bed">Bedrooms</label>
+                <input type="text" class="form-control" name="bed" id="bed" placeholder="Enter number of bedrooms" required="required">
+            </div>
+            <div class="form-group">
+                <label for="bath">Bathrooms</label>
+                <input type="text" class="form-control" name="bath" id="bath" placeholder="Enter number of bathrooms" required="required">
+            </div>
+            <div class="form-group">
+                <label for="acre_lot">Acre Lot</label>
+                <input type="text" class="form-control" name="acre_lot" id="acre_lot" placeholder="Enter size of lot in acres" required="required">
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" class="form-control" name="city" id="city" placeholder="Enter city" required="required">
+            </div>
+            <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" class="form-control" name="state" id="state" placeholder="Enter state" required="required">
+            </div>
+            <div class="form-group">
+                <label for="zip_code">Zip Code</label>
+                <input type="text" class="form-control" name="zip_code" id="zip_code" placeholder="Enter zip code" required="required">
+            </div>
+            <div class="form-group">
+                <label for="house_size">House Size</label>
+                <input type="text" class="form-control" name="house_size" id="house_size" placeholder="Enter house size in square feet" required="required">
+            </div>
+            <div class="form-group">
+                <label for="status_for_sale">Status</label>
+                <select class="form-control" name="status_for_sale" id="status_for_sale" required="required">
+                    <option value="">Select sale status</option>
+                    <option value="for_sale">For Sale</option>
+                    <option value="sold">Sold</option>
+                    <option value="not_for_sale">Not for Sale</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Predict</button>
+        </form>
+        <h2>Price prediction is: {{ predicted_price }}</h2>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
