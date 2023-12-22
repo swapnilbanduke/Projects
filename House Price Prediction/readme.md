@@ -1,4 +1,5 @@
-![](housing-market-2024.jpg)
+![Image](housing-market-2024.jpg)
+![My Image](images/myimage.png)
 
 Context
 This dataset contains Real Estate listings in the US broken by State and zip code.
