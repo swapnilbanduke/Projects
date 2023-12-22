@@ -4,25 +4,41 @@
 Context
 This dataset contains Real Estate listings in the US broken by State and zip code.
 
-Download
-kaggle API Command
-
-!kaggle datasets download -d ahmedshahriarsakib/usa-real-estate-dataset
-Content
 The dataset has 1 CSV file with 10 columns -
 
 realtor-data.csv (1.4 Million+ entries)
-status (Housing status - a. ready for sale or b. ready to build)
-bed (# of beds)
-bath (# of bathrooms)
-acre_lot (Property / Land size in acres)
-city (city name)
-state (state name)
-zip_code (postal code of the area)
-house_size (house area/size/living space in square feet)
-prev_sold_date (Previously sold date)
-price (Housing price, it is either the current listing price or recently sold price if the house is sold recently)
-NB: acre_lot means the total land area, and house_size denotes the living space/building area
+
+# Project Overview
+
+The concept of the "American Dream" often includes the milestone of home ownership. Acquiring a home is not only a significant financial investment but also an essential part of one’s life journey. However, the process of finding a suitable home that aligns with both personal preferences and budget constraints is challenging. A crucial aspect in this endeavor is understanding house pricing. 
+
+The objective of this project is to create a tool that provides an estimated house price based on readily available information. While acknowledging that several external factors can influence housing prices and the estimation may not be perfect, this tool aims to offer a starting point for potential buyers to engage in price negotiations more informatively. 
+
+The project is structured into three key areas, with a focus on data analysis and the enhancement of data features:
+- **Exploratory Data Analysis (EDA)**
+- **Feature Engineering**
+- **Model Development** 
+
+# Data Overview
+
+The primary data source for this project is a comprehensive CSV file detailing real estate listings across various regions in the United States. This dataset comprises the following 10 columns:
+* **Status**: Current status of the house, such as 'for sale' or 'ready to build'
+* **Bed**: Number of bedrooms
+* **Bath**: Number of bathrooms
+* **Acre Lot**: Size of the property or land in acres
+* **City**: Location of the house by city
+* **State**: Location of the house by state
+* **Zip Code**: Area's postal code
+* **House Size**: Total area of the house in square feet
+* **Prev Sold Date**: Date when the house was last sold (if applicable)
+* **Price**: Current listing price or the most recent sale price
+
+# Acknowledgements
+
+Data for this project was sourced from [realtor.com](https://www.realtor.com/), with thanks to [Ahmed Shahriar Sakib](https://www.kaggle.com/ahmedshahriarsakib) for compiling and maintaining the dataset on Kaggle.
+
+
+
 
 Acknowledgements
 Data was collected from -
