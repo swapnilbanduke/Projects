@@ -1,4 +1,4 @@
-![Image](housing-market-2024.jpg)
+![](housing-market-2024.jpg)
 
 
 Context
