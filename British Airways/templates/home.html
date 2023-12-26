@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body::before {
+            content: '';
+            position: fixed; 
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('/static/BA1.png');
+            background-size: cover;
+            background-position: center;
+            filter: blur(8px); 
+            z-index: -1;
+        }
+        .content {
+            position: relative; 
+            z-index: 1; 
+        }
+        .login {
+            background-color: rgba(244, 244, 244, 0.8);
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 40px auto;
+            color: #333;
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        .form-group label {
+            color: #4CAF50;
+        }
+        .btn-primary {
+            background-color: #4CAF50;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="content"> <!-- Wrap your content in this div -->
+        <div class="login">
+            <h1>British Airways Buying Behavior Prediction</h1>
+            <form action="{{ url_for('predict_datapoint')}}" method="post">
+            
+           
+            <!-- Form groups for each feature -->
+            <div class="form-group">
+                <label for="num_passengers">Number of Passengers</label>
+                <input type="number" class="form-control" name="num_passengers" id="num_passengers" placeholder="Enter Number of Passengers" required>
+            </div>
+            <div class="form-group">
+                <label for="purchase_lead">Purchase Lead (Days)</label>
+                <input type="number" class="form-control" name="purchase_lead" id="purchase_lead" placeholder="Enter Purchase Lead Time" required>
+            </div>
+            <div class="form-group">
+                <label for="length_of_stay">Length of Stay (Days)</label>
+                <input type="number" class="form-control" name="length_of_stay" id="length_of_stay" placeholder="Enter Length of Stay" required>
+            </div>
+            <div class="form-group">
+                <label for="flight_hour">Flight Hour</label>
+                <input type="number" class="form-control" name="flight_hour" id="flight_hour" placeholder="Enter Flight Hour" required>
+            </div>
+            <div class="form-group">
+                <label for="flight_day">Flight Day (No. of Days)</label>
+                <input type="number" class="form-control" name="flight_day" id="flight_day" placeholder="Enter Flight Day" required>
+            </div>
+            <div class="form-group">
+                <label for="wants_extra_baggage">Wants Extra Baggage</label>
+                <select class="form-control" name="wants_extra_baggage" id="wants_extra_baggage" required>
+                    <option value="">Select Option</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="wants_preferred_seat">Wants Preferred Seat</label>
+                <select class="form-control" name="wants_preferred_seat" id="wants_preferred_seat" required>
+                    <option value="">Select Option</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="wants_in_flight_meals">Wants In-flight Meals</label>
+                <select class="form-control" name="wants_in_flight_meals" id="wants_in_flight_meals" required>
+                    <option value="">Select Option</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="flight_duration">Flight Duration (Hrs)</label>
+                <input type="number" class="form-control" name="flight_duration" id="flight_duration" placeholder="Enter Flight Duration" required>
+            </div>
+            <div class="form-group">
+                <label for="Internet">Platform used For Booking</label>
+                <select class="form-control" name="Internet" id="Internet" required>
+                    <option value="">Select Option</option>
+                    <option value="1">Internet</option>
+                    <option value="0">Mobile Application</option>
+                </select> 
+            </div>
+            
+            
+
+            <div class="form-group">
+                <label for="RoundTrip">Is this Round Trip?</label>
+                <select class="form-control" name="RoundTrip" id="RoundTrip" required>
+                    <option value="">Select Option</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+            
+                
+            <div class="form-group">
+                <label for="OneWayTrip">Is this a One Way Trip?</label>
+                <select class="form-control" name="OneWayTrip" id="OneWayTrip" required>
+                    <option value="">Select Option</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="CircleTrip">Is this a Circle Trip?</label>
+                <select class="form-control" name="CircleTrip" id="CircleTrip" required>
+                    <option value="">Select Option</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-block">Predict</button>
+        </form>
+       
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

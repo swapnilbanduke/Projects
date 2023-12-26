@@ -1,0 +1,10 @@
+Flask
+Flask
+Jinja2
+Werkzeug
+gunicorn
+requests
+pandas
+numpy
+scikit-learn==1.2.2
+matplotlib
