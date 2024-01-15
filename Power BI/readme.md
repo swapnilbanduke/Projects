@@ -30,5 +30,4 @@ This dashboard was constructed using data from two key files:
 
 The dashboard provides a comprehensive view of sales performance across multiple dimensions. By analyzing the trends and patterns, stakeholders can make informed decisions to drive business growth.
 
-Remember to replace `/path/to/image.png` with the actual path to your dashboard image.
 
