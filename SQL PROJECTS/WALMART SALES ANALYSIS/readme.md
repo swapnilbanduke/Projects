@@ -144,11 +144,10 @@ $ \text{Gross Margin Percentage} = \frac{\text{gross income}}{\text{total revenu
 
 ## Code
 
--- Create database
-CREATE DATABASE IF NOT EXISTS walmartSales;
+## Sales Table Structure
 
 
--- Create table
+```sql
 CREATE TABLE IF NOT EXISTS sales(
   invoice_id VARCHAR(30) NOT NULL PRIMARY KEY,
   branch VARCHAR(5) NOT NULL,
