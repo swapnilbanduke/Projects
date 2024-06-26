@@ -1,10 +1,6 @@
 # CRPC8: Mitron Bank: Analysis for New Credit Card Launch 
 
-## Created by- Saddam Ansari @Aspiring Data Analyst [Linkeldin Profile](https://www.linkedin.com/in/saddam-ansari-dataanalyst/)
-### Live Dashboard at Novypro [Live_link_Novypro](https://www.novypro.com/project/mitron-bank-credit-card-analysis-crpc8-by---saddam-ansari)
-### Linkeldin post for this project with presentation video [Link](https://www.linkedin.com/posts/saddam-ansari-dataanalyst_codebasicsresumeprojectchallenge-like-comment-activity-7148218554763448320-Qd6b?utm_source=share&utm_medium=member_desktop)
-### Presentation ppt at Canva [Link](https://www.canva.com/design/DAF4cPSsnUU/14YqtWQOic0R7VCEVx8T6w/edit?utm_content=DAF4cPSsnUU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
-
+## Created by- Swapnil Banduke  [Linkeldin Profile](www.linkedin.com/in/swapnil-banduke)
 #
 ## Table of Content
 1. [About Mitron Bank](#about-mitron-bank)
@@ -14,9 +10,6 @@
 5. [Income Utilization & Spending Analysis](#income-utilization--spending-analysis)
 6. [Table Grid View Page](#table-grid-view-page)
 7. [Recomendation](#recomendation-for-next-credit-card)
-8. [Footer](#dont-forget-to-give-a-start-to-this-project-because-its-motivate-me-and-also-please-follow-me-on-linkeldin-and-please-consider-me-for-any-internship-or-entry-level-data-analyst-role-i-need-a-job-or-internship-even-thought-its-a-free-or-paid-thanks-in-advance)
-
-
 
 #
 ### About Mitron Bank 
@@ -225,9 +218,6 @@ Implement advanced security features such as fraud alerts, biometric authenticat
 
  [🔁Home](#table-of-content)
 
-#### Don't forget to give a start to this project because its motivate me and also please follow me on [Linkeldin](https://www.linkedin.com/in/saddam-ansari-dataanalyst/). and Please consider me for any internship or entry level data analyst role. I need a job or internship even thought its a free or paid. Thanks in Advance.
-
-Created & Presented by -Saddam Ansari @ Aspiring Data Analyst
 
 
 Date- 03/01/2024
