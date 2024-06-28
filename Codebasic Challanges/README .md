@@ -42,7 +42,7 @@ The objective is to analyze this data and provide actionable, data-driven recomm
 
 For demographic classification, I have conducted a thorough customer demographic analysis using Power BI, and here are the key findings presented in a visually engaging manner:
 
-![Page 1](https://github.com/user-saddam123/CodeBasics-Resume-Project-Challenge-8/assets/123800896/7eadc5bd-1c49-4073-8e37-b78f81375063)
+![Page 1](https://github.com/swapnilbanduke/Projects/blob/main/Codebasic%20Challanges/demographic%20Classification.jpg)
 
 #### Total Customers:
 
