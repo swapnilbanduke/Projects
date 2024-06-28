@@ -69,7 +69,7 @@ The dataset encompasses a substantial pool of 4000 customers, forming the founda
 
 #### City-wise Distribution:
 
-![4](https://github.com/user-saddam123/CodeBasics-Resume-Project-Challenge-8/assets/123800896/962b9a4b-dad7-4cdb-a4c2-e865fd906d3d)
+![4](https://github.com/swapnilbanduke/Projects/blob/main/Codebasic%20Challanges/Customer%20by%20city.jpg)
 
  * Mumbai takes the lead in terms of customer concentration, with 1078 customers, predominantly males.
  * Other major cities like Chennai, Bangalore, and Delhi NCR also contribute significantly to our customer base.
